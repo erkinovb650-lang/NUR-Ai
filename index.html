@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NUR AI — Intelligence for Humanity</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080817;color:white;font-family:Arial,sans-serif;min-height:100vh}
+header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #252344}
+.logo{font-size:25px;font-weight:bold;color:#a78bfa}
+.logo span{color:white}
+.hero{text-align:center;padding:100px 20px 45px}
+.tag{color:#a78bfa;border:1px solid #51418a;padding:9px 16px;border-radius:30px;display:inline-block;font-size:13px}
+h1{font-size:clamp(40px,8vw,76px);margin:28px 0 15px}
+h1 span{color:#a78bfa}
+p{color:#aaa9c4;line-height:1.7}
+.hero p{max-width:550px;margin:auto}
+.chat{max-width:650px;margin:35px auto;padding:15px;background:#15142b;border:1px solid #39345f;border-radius:18px;display:flex;gap:10px}
+input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;padding:12px;font-size:15px}
+button{background:#8055e9;color:white;border:0;padding:13px 20px;border-radius:11px;cursor:pointer}
+.features{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:35px 15px}
+.feature{background:#141329;border:1px solid #292747;padding:22px;border-radius:15px;width:190px;text-align:center}
+.feature h3{margin-bottom:9px}
+.feature p{font-size:13px}
+#answer{max-width:650px;margin:0 auto 30px;padding:20px;color:#ddd;white-space:pre-wrap}
+footer{text-align:center;padding:35px;color:#777;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">✦ NUR <span>AI</span></div>
+<div>Intelligence for Humanity</div>
+</header>
+<section class="hero">
+<div class="tag">✦ Yangi avlod sun'iy intellekti</div>
+<h1>Kelajak bilan <span>muloqot qiling.</span></h1>
+<p>NUR AI — savollaringizga javob beradigan, fikrlashga va yangi g‘oyalar yaratishga yordam beradigan aqlli yordamchingiz.</p>
+<div class="chat">
+<input id="question" placeholder="NUR AI ga savolingizni yozing...">
+<button onclick="ask()">Yuborish ↗</button>
+</div>
+<div id="answer"></div>
+</section>
+<section class="features">
+<div class="feature"><h3>🧠 Aqlli</h3><p>Yangi g‘oyalar va bilimlar.</p></div>
+<div class="feature"><h3>⚡ Tezkor</h3><p>Qulay va tez foydalanish.</p></div>
+<div class="feature"><h3>🛡️ Xavfsiz</h3><p>Insoniyat manfaatlari uchun.</p></div>
+</section>
+<footer>© 2026 NUR AI — Intelligence for Humanity</footer>
+<script>
+function ask(){
+const q=document.getElementById('question').value.trim();
+if(!q)return;
+document.getElementById('answer').textContent='Savolingiz qabul qilindi: '+q+'\n\nAI xizmatini ulash keyingi bosqichda amalga oshiriladi.';
+}
+</script>
+</body>
+</html>
